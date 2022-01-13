@@ -8,9 +8,14 @@ public class Prob4 {
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("문자열을 입력하세요 : ");
-		String text = scanner.nextLine();
-
+		String[] text = scanner.nextLine().split("");
 		
+		for(int i=0; i<= text.length; i++) {
+			for(int j=0; j<i; j++) {
+				System.out.print(text[j]);
+			}
+			System.out.println();
+		}
 		scanner.close();
 	}
 
